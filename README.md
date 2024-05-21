@@ -1,6 +1,6 @@
 # layout-practice
 
-A [second](https://coda.io/@metalamp/education/front-end-2) task from a Metalamp course 
+A [second](https://coda.io/@metalamp/education/front-end-2) task from a Metalamp course
 
 ## Installation
 
@@ -9,6 +9,7 @@ Command
 ```bash
 npm run start
 ```
+
 will start a webpack server. But if live reload isn't working, then you can make next.
 
 Write in terminal:
