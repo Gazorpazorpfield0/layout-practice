@@ -1,0 +1,41 @@
+@use '/src/components/color-example/color-example';
+@use '/src/assets/scss/variables' as *;
+// @use '/src/common';
+
+.colors-and-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 145px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+// .text {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 50px;
+//     max-width: 430px;
+// }
+
+.text {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 50px);
+    align-items: start;
+    column-gap: 30px;
+    row-gap: 50px;
+    max-width: 430px;
+}
+
+.text-example {
+    display: flex;
+    gap: 30px;
+}
+
+.text-name-prefix {
+    color: $dark_shade_25;
+}

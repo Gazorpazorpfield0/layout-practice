@@ -1,0 +1,12 @@
+@use '/src/assets/scss/variables' as *;
+@use '/src/assets/scss/reset' as *;
+
+@use 'ui-kit/index';
+@use 'components/style.scss';
+@use 'common.scss';
+
+body {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $dark_shade_75;
+}

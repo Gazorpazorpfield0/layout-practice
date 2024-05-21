@@ -1,0 +1,12 @@
+@use '/src/assets/scss/variables' as *;
+
+.color-example__name {
+    color: $dark_shade;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 5px;
+}

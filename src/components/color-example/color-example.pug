@@ -1,0 +1,10 @@
+include __code/color-example__code.pug
+include __color/color-example__color.pug
+include __name/color-example__name.pug
+
+mixin color-example(name, code)
+    .color-example
+        +color(code)
+        .color-example__info
+            +colorName(name)
+            +colorCode(code)

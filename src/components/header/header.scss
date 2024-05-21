@@ -1,0 +1,32 @@
+@use 'src/assets/scss/variables' as *;
+
+.header {
+    &_l,
+    &_m,
+    &_s {
+        font-weight: 700;
+        color: $dark_shade;
+    }
+    &_l {
+        font-size: 24px;
+    }
+    &_m {
+        font-size: 19px;
+    }
+    &_s {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    &_75 {
+        color: $dark_shade_75;
+    }
+    &_50 {
+        color: $dark_shade_50;
+    }
+    &_25 {
+        color: $dark_shade_25;
+    }
+    &_5 {
+        color: $dark_shade_5;
+    }
+}

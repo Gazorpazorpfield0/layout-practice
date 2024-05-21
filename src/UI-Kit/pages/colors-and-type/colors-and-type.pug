@@ -1,0 +1,63 @@
+include /src/components/color-example/color-example.pug
+include /src/components/header/header.pug
+
+-
+    var colorExamples = [
+        {
+            name: 'Dark Shade 100%',
+            code: '#1F2041'
+        },
+        {
+            name: 'Dark Shade 75%',
+            code: '#1F2041BF'
+
+        },
+        {
+            name: 'Dark Shade 50%',
+            code: '#1F204180'
+
+        },
+        {
+            name: 'Dark Shade 25%',
+            code: '#1F204140'
+        },
+        {
+            name: 'Dark Shade 5%',
+            code: '#1F20410D'
+
+        },
+        {
+            name: 'Purple',
+            code: '#BC9CFF'
+
+        },
+        {
+            name: 'Green',
+            code: '#6FCF97'
+
+        }
+    ]
+
+.colors-and-type
+    include /src/components/logo/logo.pug
+
+    .colors
+        each example in colorExamples 
+            +color-example(example.name, example.code)
+
+    .text
+        .justify-self-end
+            +header('h1', 'H1', '25')
+        +header('h1', 'This one is the sub-section or widget title')
+
+        .justify-self-end
+            +header('h2', 'H2', '25')
+        +header('h2', 'Next one is the item title inside widgets')
+
+        .justify-self-end
+            +header('h3', 'H3', '25')
+        +header('h3', 'This is a label or CTA text')
+
+        .justify-self-end
+            span Body
+        span This is the body text which is used for most of the design, like paragraphs, lists, etc.

@@ -1,0 +1,9 @@
+@use '__color/color-example__color';
+@use '__info/color-example__info';
+@use '__name/color-example__name';
+@use '__code/color-example__code';
+
+.color-example {
+    display: flex;
+    align-items: center;
+}

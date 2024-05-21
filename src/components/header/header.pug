@@ -1,0 +1,37 @@
+mixin header(type, text, opacity='100')
+    if type === 'h1'
+        case opacity
+            when '75'
+                span.header_l.header_75= text
+            when '50'
+                span.header_l.header_50= text
+            when '25'
+                span.header_l.header_25= text
+            when '5'
+                span.header_l.header_5= text
+            default
+                span.header_l= text
+    if type === 'h2'
+        case opacity
+            when '75'
+                span.header_m.header_75= text
+            when '50'
+                span.header_m.header_50= text
+            when '25'
+                span.header_m.header_25= text
+            when '5'
+                span.header_m.header_5= text
+            default
+                span.header_m= text
+    if type === 'h3'
+        case opacity
+            when '75'
+                span.header_s.header_75= text
+            when '50'
+                span.header_s.header_50= text
+            when '25'
+                span.header_s.header_25= text
+            when '5'
+                span.header_s.header_5= text
+            default
+                span.header_s= text
