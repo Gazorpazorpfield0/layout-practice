@@ -6,6 +6,12 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         title Document
         link(rel='stylesheet', href=require('style.scss'))
+        link(
+            rel='stylesheet',
+            href=require('../third-party/jquery-ui/jquery-ui.min.css')
+        )
+        script(src='../third-party/jquery-ui/external/jquery/jquery.js') 
+        script(src='../third-party/jquery-ui/jquery-ui.min.js') 
     body
         include ui-kit/index.pug
         script(src=require('app.js'))

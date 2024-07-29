@@ -1,0 +1,6 @@
+mixin label(options)
+    - let name = options.name ? options.name : '';
+    - let label = options.label ? options.label : '';
+    - let className = options.class ? options.class : '';
+
+    label.label(for=name, class=className)= label

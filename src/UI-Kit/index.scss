@@ -1,2 +1,7 @@
 @use '/src/ui-kit/pages/colors-and-type/colors-and-type';
 @use '/src/ui-kit/pages/form-elements/form-elements';
+
+.colors-and-type-radio:not(:checked) ~ .colors-and-type-page,
+.form-elements-radio:not(:checked) ~ .form-elements-page {
+    display: none;
+}

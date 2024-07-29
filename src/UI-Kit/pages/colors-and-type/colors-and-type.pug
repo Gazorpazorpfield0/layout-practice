@@ -47,16 +47,16 @@ include /src/components/header/header.pug
 
     .text
         .justify-self-end
-            +header('h1', 'H1', '25')
-        +header('h1', 'This one is the sub-section or widget title')
+            +header({type: 'h1', text: 'H1', opacity: '25'})
+        +header({type: 'h1', text: 'This one is the sub-section or widget title'})
 
         .justify-self-end
-            +header('h2', 'H2', '25')
-        +header('h2', 'Next one is the item title inside widgets')
+            +header({type: 'h2', text: 'H2', opacity: '25'})
+        +header({type: 'h2', text: 'Next one is the item title inside widgets'})
 
         .justify-self-end
-            +header('h3', 'H3', '25')
-        +header('h3', 'This is a label or CTA text')
+            +header({type: 'h3', text: 'H3', opacity: '25'})
+        +header({type: 'h3', text: 'This is a label or CTA text'})
 
         .justify-self-end
             span Body

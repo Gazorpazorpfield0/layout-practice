@@ -1,0 +1,17 @@
+@use '/src/components/input/input.scss';
+
+.dropdown {
+    @extend .input;
+    padding: 0 15px;
+
+    background-image: url('src/assets/arrow.svg');
+    background-repeat: no-repeat;
+    background-position:
+        right 0.7em top 50%,
+        0 0;
+    appearance: none;
+
+    &__label {
+        margin-bottom: 5px;
+    }
+}

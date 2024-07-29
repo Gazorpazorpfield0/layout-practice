@@ -1,0 +1,15 @@
+include /src/components/label/label.pug
+
+mixin dropdown(options)
+    - let id = options.id ? options.id : '';
+    - let name = options.name ? options.name : '';
+    - let value = options.value ? options.value : '';
+    - let label = options.label ? options.label : '';
+    - let text = options.text ? options.text : '';
+    - let variants = options.variants ? options.variants : [];
+
+    +label({name: name, label: label, class: 'dropdown__label'})
+    select.dropdown(type=type, id=id, name=name, value=value)
+        option(value=value)= text
+        each val in variants 
+            option(value=val)= val

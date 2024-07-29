@@ -1,2 +1,6 @@
-@use 'header/header.scss';
-@use 'logo/logo.scss';
+@use 'src/components/header/header.scss';
+@use 'src/components/logo/logo.scss';
+@use 'src/components/input/input.scss';
+@use 'src/components/dropdown/dropdown.scss';
+@use 'src/components/label/label.scss';
+@use 'src/components/date-dropdown/date-dropdown.scss';

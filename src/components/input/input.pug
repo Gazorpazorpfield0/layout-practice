@@ -1,0 +1,23 @@
+include /src/components/label/label.pug
+
+mixin input(options)
+    - let id = options.id ? options.id : '';
+    - let label = options.label ? options.label : '';
+    - let type = options.type ? options.type : 'text';
+    - let placeholder = options.placeholder ? options.placeholder : '';
+    - let name = options.name ? options.name : '';
+    - let value = options.value ? options.value : '';
+    - let title = options.title ? options.title : '';
+    - let pattern = options.pattern ? options.pattern : '';
+    - let isDateDropdown = options.type === 'date';
+
+    .input__header
+        +label({name: name, label: label, class: 'input__label'})
+        span.input__title= title
+    input.input(class=isDateDropdown ? 'dropdown' : '', id=id)(
+        type=type,
+        placeholder=placeholder,
+        name=name,
+        value=value,
+        pattern=pattern
+    )

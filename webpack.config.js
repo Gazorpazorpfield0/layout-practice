@@ -21,15 +21,7 @@ module.exports = {
 
     plugins: [
         new PugPlugin({
-            pretty: isDevMode ? true : false, // formatting HTML, useful for development mode
-            // js: {
-            //   // output filename of extracted JS file from source script
-            //   filename: '[name].[contenthash:8].js',
-            // },
-            // css: {
-            //   // output filename of extracted CSS file from source style
-            //   filename: '[name].[contenthash:8].css',
-            // },
+            pretty: isDevMode ? true : false,
         }),
     ],
 
@@ -42,7 +34,6 @@ module.exports = {
             {
                 test: /\.(sass|scss|css)$/,
                 use: ['css-loader', 'sass-loader'],
-                // use: ["css-loader", "sass-loader"],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,

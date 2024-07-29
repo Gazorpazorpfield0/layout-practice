@@ -1,0 +1,8 @@
+@use '/src/assets/scss/variables' as *;
+
+.label {
+    font-size: 12px;
+    font-weight: 700;
+    color: $dark_shade;
+    text-transform: uppercase;
+}

@@ -1,0 +1,21 @@
+include /src/components/input/input.pug
+include /src/components/dropdown/dropdown.pug
+include /src/components/date-dropdown/date-dropdown.pug
+//- include /src/components/header/header.pug
+
+.form-elements
+    .input-examples
+        .input-example
+            +input({label: 'Text field', type: 'email', placeholder: 'Email', name: 'email example', title: 'Default'})
+        .input-example
+            +input({label: 'Text field', type: 'text', name: 'text example', value: 'This is pretty awesome', title: 'Hover/Focus'})
+        .input-example
+            +dropdown({id: 'guestsDropdown', label: 'Dropdown', name: 'dropdown example', text: 'Сколько гостей', variants: [1, 2, 3, 4, 5]})
+        .input-example
+            +input({label: 'Masked text field', type: 'text', placeholder: 'ДД.ММ.ГГГГ', name: 'date example', pattern: '\d{2}/\d{2}/\d{4}'})
+        //- .input-example.input-example_double
+        //-     .input-example
+        //-         +date-dropdown({id: 'date', label: 'Date dropdown', type: 'date', value: 'ДД.ММ.ГГГГ', name: 'date dropdown 1'})
+        //-     .input-example
+        //-         +date-dropdown({label: 'Date dropdown', type: 'date', placeholder: 'ДД.ММ.ГГГГ', name: 'date dropdown 2'})
+        //- .input-example

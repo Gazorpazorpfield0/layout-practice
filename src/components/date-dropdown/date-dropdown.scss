@@ -1,0 +1,11 @@
+@use '/src/components/input/input.scss';
+
+.date-dropdown {
+    @extend .input;
+    background-image: url('src/assets/arrow.svg');
+    background-repeat: no-repeat;
+    background-position:
+        right 0.7em top 50%,
+        0 0;
+    appearance: none;
+}

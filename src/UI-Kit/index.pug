@@ -1,2 +1,21 @@
-include /src/ui-kit/pages/colors-and-type/colors-and-type.pug
-include /src/ui-kit/pages/form-elements/form-elements.pug
+input.colors-and-type-radio(
+    type='radio',
+    name='pages',
+    value='colors-and-type-radio'
+)
+label(for='colors-and-type-radio') colors-and-type
+
+input.form-elements-radio(
+    type='radio',
+    name='pages',
+    value='form-elements-radio',
+    checked
+)
+label(for='form-elements-radio') form-elements
+
+include /src/components/logo/logo.pug
+
+.colors-and-type-page
+    include /src/ui-kit/pages/colors-and-type/colors-and-type.pug
+.form-elements-page
+    include /src/ui-kit/pages/form-elements/form-elements.pug
